@@ -6,7 +6,10 @@ document.querySelector('.search-btn').addEventListener('click', () => {
 document.querySelector('.location-btn').addEventListener('click', () => {
   navigator.geolocation.getCurrentPosition((position) => {
       fetchWeatherData(null, position.coords.latitude, position.coords.longitude);
+      console.log('Latitude:', position.coords.latitude);
+      console.log('Longitude:', position.coords.longitude);
   });
+
 });
 
 function fetchWeatherData(city, lat = null, lon = null) {
