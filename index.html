@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h1>Weather Dashboard</h1>
+  <div class="container">
+    <div class="weather-input">
+      <h3>Enter a City Name</h3>
+      <input class="city-input" type="text" placeholder="E.g., New York, London, Tokyo">
+      <button class="search-btn">Search</button>
+      <div class="separator"></div>
+      <button class="location-btn">Use Current Location</button>
+      <div class="search-history-container">
+        <ul id="history-list">
+          <!-- Recent searches will be dynamically added here -->
+        </ul>
+      </div>
+    </div>
+    
+    <div class="weather-data">
+      <div class="current-weather">
+        <div class="details">
+          <h2 class="city-name">City, Country</h2>
+          <h6 class="temp">Temperature: --°C</h6>
+          <h6 class="wind">Wind: -- M/S</h6>
+          <h6 class="humidity">Humidity: --%</h6>
+        </div>
+        <div class="icon">
+          <img src="" alt="Weather Icon" class="weather-icon">
+          <h6 class="weather-desc">Clear</h6>
+        </div>
+      </div>
+      <div class="hourly-forecast">
+        <h2>Hourly Forecast</h2>
+        <ul class="hourly-cards">
+          <!-- Hourly forecast cards will be dynamically added here -->
+        </ul>
+      </div>
+      <div class="days-forecast">
+        <h2>5-Day Forecast</h2>
+        <ul class="weather-cards">
+          <!-- 5-day forecast cards will be dynamically added here -->
+        </ul>
+      </div>
+      <!-- <div class="weather-map">
+        <h2>Weather Map</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=YOUR_MAP_EMBED_LINK" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div> -->
+    </div>
+  </div>
+</body>
+</html>
